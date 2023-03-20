@@ -17,8 +17,8 @@
 #endif
   #include <libb64/cencode.h>
   
-#include "SinricProNamespace.h"
-namespace SINRICPRO_NAMESPACE {
+//#include "SinricProNamespace.h"
+//namespace SINRICPRO_NAMESPACE {
 
 String HMACbase64(const String &message, const String &key) {
   byte hmacResult[32];
@@ -78,4 +78,4 @@ String signMessage(String key, JsonDocument &jsonMessage) {
   return signedMessageString;
 }
 
-} // SINRICPRO_NAMESPACE
+//} // SINRICPRO_NAMESPACE

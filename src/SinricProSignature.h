@@ -7,12 +7,12 @@
 
 #pragma once
 
-#include "SinricProNamespace.h"
-namespace SINRICPRO_NAMESPACE {
+//#include "SinricProNamespace.h"
+//namespace SINRICPRO_NAMESPACE {
 
 String HMACbase64(const String &message, const String &key);
 String extractPayload(const char *message);
 String calculateSignature(const char* key, String payload);
 String signMessage(String key, JsonDocument &jsonMessage);
 
-} // SINRICPRO_NAMESPACE
+//} // SINRICPRO_NAMESPACE
